@@ -39,4 +39,6 @@ COPY openvpn.tmpl $OVPN_TEMPLATE
 # Add support for OTP authentication using a PAM module
 ADD ./otp/openvpn /etc/pam.d/
 
+# Add Google auth here
 CMD ["/sbin/entrypoint.sh"]
+
